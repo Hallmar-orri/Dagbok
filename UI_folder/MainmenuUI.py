@@ -2,7 +2,7 @@ from EmployeesUI import EmployeesUI
 #from VoyageUI import Voyages_UI
 #from DestinationUI import Destinations_UI
 #form AirplaneUI import Airplane_UI
-#from Information_about_a_date import IAAD_UI
+from IAADUI import IAAD_UI
 
 class MainmenuUI():
     LENGTH_STAR = 20
@@ -31,7 +31,7 @@ class MainmenuUI():
             pass
 
         elif action == "5":
-            IAAD_UI.show_enter_date()
+            IAAD = IAAD_UI.show_enter_date(self)
             pass
             
 def main():
